@@ -1,16 +1,7 @@
 {% extends 'frontpage/base.html' %} 
+{% load static %}
 {% block content %}
-<div class="m-10 p-10 bg-blue-500 rounded-xl">
-    <h1> Hayato </h1>
-    
+<div class="flex min-h-screen flex-col justify-center overflow-hidden bg-gray-50 py-6 sm:py-12">
+    <img src="{% static 'images/image_bg.png' %}" alt="" class="absolute top-1/2 left-1/2 max-w-none -translate-x-1/2 -translate-y-1/2 mt-8">
 </div>
-
-<div class="grid grid-cols-4 gap-4">
-    <div>01</div>
-    <div>09</div>
-    <div>09</div>
-    <div>09</div>
-    <div>09</div>
-  </div>
-
 {% endblock %}
